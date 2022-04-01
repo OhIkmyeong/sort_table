@@ -1,1 +1,23 @@
 @charset "utf-8";
+/* reset */
+*{margin:0;padding:0;box-sizing:border-box;}
+table{table-layout:fixed;border-collapse:separate;border-spacing:0;border:1px solid black; border-width:1px 0 0 1px;}
+th,td{position:relative;border:1px solid black;border-width:0 1px 1px 0; padding:1em;}
+th{background:#eee;}
+html,body{
+    display:flex;flex-flow:column nowrap;
+    justify-content:center;align-items:center;
+    width:100%;min-height:100vh;}
+
+/* sort */
+[data-sort]{
+    padding:1em 2em;
+    background:rgb(15, 16, 49);border-color:#fff;
+    color:#fff;
+    cursor:pointer;
+}
+
+[data-sort]::after{
+    content:'▼';
+    margin-left:1em;
+    font-size:.5em;color:yellow;}
